@@ -5,6 +5,7 @@ import com.practice.springjpasecurity.entity.UserEntity;
 import com.practice.springjpasecurity.repository.AuthorityRepository;
 import com.practice.springjpasecurity.repository.UserRepository;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
@@ -14,7 +15,7 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class MasterService {
 
     private final UserRepository userRepository;

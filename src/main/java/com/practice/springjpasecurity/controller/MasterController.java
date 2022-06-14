@@ -5,6 +5,7 @@ import com.practice.springjpasecurity.dto.UserListDto;
 import com.practice.springjpasecurity.service.MasterService;
 import com.practice.springjpasecurity.service.UserService;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,7 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping("/master")
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class MasterController {
 
     private final MasterService masterService;

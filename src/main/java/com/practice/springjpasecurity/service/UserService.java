@@ -3,12 +3,13 @@ package com.practice.springjpasecurity.service;
 import com.practice.springjpasecurity.entity.UserEntity;
 import com.practice.springjpasecurity.repository.UserRepository;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class UserService {
 
     private final UserRepository userRepository;
